@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxygen:wght@400;700&display=swap');
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Oxygen', sans-serif;
+}
+html{
+    font-size: 62.5%;
+}
+/* flex box  */
+.d-flex{
+    display: flex;
+}
+.jus-center{
+    justify-content:center;
+}
+.jus-between{
+    justify-content: space-between;
+}
+.al-center{
+    align-items: center;
+}
+/* most uses */
+a{
+    text-decoration: none;
+    font-size:1.5em;
+    color: darkslategrey;
+}
+h3{
+    font-size:3em;
+    font-weight:700;
+}
+/* hader area  */
+.header-area{
+    background-color:rgb(176, 0, 211);
+    padding: 10px 30px;
+    overflow:hidden;
+    box-shadow:5px 0 30px rgba(176, 0, 211, 0.555);
+}
+.nav-item{
+    list-style: none;
+    margin-left: 10px;
+    position:relative;
+    text-align:center;
+}
+.nav-item a{
+    color: aqua;
+    padding: 10px;
+    display: inline-block;
+    font-weight: 700;
+}
+.nav-item:last-child{
+    margin-left: 0;
+}
+.nav-item::after{
+    content: "";
+    width: 0;
+    height:2px;
+    background-image: linear-gradient(150deg , rgb(8, 250, 81), aqua);
+    right: 50%;
+    bottom:0;
+    display: block;
+    margin-top:5px;
+    position:absolute;
+    transition:1s ease;
+    text-align: center;
+}
+.nav-item:hover a,.user .fas:hover{
+    color:greenyellow;
+}
+.nav-item:hover::after{
+    width: 100%;
+    right: 0;
+}
+.user .fas{
+    color:aqua;
+    font-size:2em;
+    margin-right: 10px;
+}
+.logo{
+    color: aqua;
+}
+
+.logo span{
+    color:transparent;
+    text-decoration: underline;
+    position: relative;
+}
+.logo span::after{
+    content: "roMax";
+    position:absolute;
+    left:0;
+    top:0;
+    color: rgb(245, 229, 10);
+    animation:logo-an 3s infinite ease;
+} 
+@keyframes logo-an {
+    0%{
+        content: "r।";
+    }
+    25%{
+        content: "ro|";
+    }
+    50%{
+        content: "roM|";
+    }
+    75%{
+        content: "roMa|";
+    }
+    75%{
+        content: "roMa|";
+    }
+    90%{
+        content: "roMax|";
+    }
+    100%{
+        content: "roMax|";
+    }
+}
+/* login */
+.login{
+   height:90vh;
+}
+.user-form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(to top,rgba(114, 19, 161, 0.555), rgba(14, 7, 7, 0.514)) ,url("../img/laptop.jpg");
+    background-size: cover;
+    height: 80%;
+    width: 50%;
+    box-shadow: 0 0 30px rgba(83, 60, 126, 0.733);
+    border-radius:10px;
+}
+.user-form input{
+    width: 80%;
+    padding:12px;
+    margin-bottom: 1.4em;
+    border:1px solid red;
+    border-radius:10px;
+}
+input[placeholder]{
+    font-size:2em;
+}
+.user-form button{
+    width: 50%;
+    border:0;
+    padding:10px;
+    background-color: rgb(255, 0, 212);
+    border-radius:10px;
+    font-size: 2em;
+    color:rgb(253, 253, 253);
+    font-weight:700;
+    transition: 3s ease;
+}
+.user-form button:hover{
+    transform: scale(1.1) rotatex(360deg);
+    background-image: linear-gradient(to top ,rgb(39, 241, 208),rgb(28, 14, 224));
+    box-shadow: 0 0 30px rgba(83, 60, 126, 0.733);
+    color:rgb(255, 0, 212);
+}
+.user-form h2{
+    font-size: 4em;
+    color: rgb(39, 241, 208);
+    font-weight: 700;
+    margin-bottom: 1em;
+    letter-spacing: 10px;
+}

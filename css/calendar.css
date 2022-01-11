@@ -1,0 +1,48 @@
+
+.calenar{
+    text-align: center;
+    margin: 50px 100px;
+    box-shadow: 0 0 24px rgba(211, 44, 233, 0.644);
+}
+.cl-header h2{
+    padding-top: 50px;
+    font-size:3em;
+    color:aqua;
+}
+.main-calander{
+    margin:0 20px 20px 20px;
+    padding:20px;
+}
+.main-calander h3{
+    font-weight:700;
+    font-size:2.5em;
+    margin-bottom:50px;
+    color:darkmagenta;
+}
+.grid-box{
+    display: grid;
+    grid-template-columns:repeat(7 ,1fr);
+    grid-template-rows: 2fr 1fr;
+    grid-gap: 10px;
+    justify-content:  center;
+    align-items: center;
+}
+.calenar ul{
+    margin-bottom: 30px;
+}
+.calenar .active{
+    background-color:dimgray;
+    color:aqua;
+}
+.day{
+    background-color:aqua;
+    color: rgb(232, 12, 240);
+}
+.calenar ul li{
+    list-style:none;
+    padding:10px;
+    font-size:2em;
+    box-shadow: 0 0 24px rgba(211, 44, 233, 0.644) ;
+    border-radius: 5px;
+    
+}
