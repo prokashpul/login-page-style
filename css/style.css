@@ -37,7 +37,6 @@ h3{
 .header-area{
     background-color:rgb(176, 0, 211);
     padding: 10px 30px;
-    overflow:hidden;
     box-shadow:5px 0 30px rgba(176, 0, 211, 0.555);
 }
 .nav-item{
@@ -95,9 +94,9 @@ h3{
     left:0;
     top:0;
     color: rgb(245, 229, 10);
-    animation:logo-an 3s infinite ease;
+    animation:logo-in 3s infinite ease;
 } 
-@keyframes logo-an {
+@keyframes logo-in {
     0%{
         content: "r।";
     }
@@ -131,13 +130,13 @@ h3{
     align-items: center;
     background-image:linear-gradient(to top,rgba(114, 19, 161, 0.555), rgba(14, 7, 7, 0.514)) ,url("../img/laptop.jpg");
     background-size: cover;
-    height: 80%;
-    width: 50%;
+    padding: 80px 20px;
     box-shadow: 0 0 30px rgba(83, 60, 126, 0.733);
     border-radius:10px;
+    width: 60%;
 }
 .user-form input{
-    width: 80%;
+    width: 100%;
     padding:12px;
     margin-bottom: 1.4em;
     border:1px solid red;
@@ -169,4 +168,45 @@ input[placeholder]{
     font-weight: 700;
     margin-bottom: 1em;
     letter-spacing: 10px;
+}
+@media screen and (max-width:680px){
+    .user-form{
+        padding: 20px 0;
+        margin: 0 10px;
+        width:95%;
+    }
+    .user-form input,.user-form button{
+        width:90%;
+        padding:8px;
+    }
+    input[placeholder]{
+    font-size:1.5em;
+}
+.user-form h2{
+    font-size: 2em;
+    letter-spacing:0;
+}
+/* .nav-area{
+    flex-direction: column;
+} */
+.nav-items{
+    display: block;
+    height: 100vh;
+    position:absolute;
+    top:10%;
+    left:0;
+    width: 100%;
+    margin:0;
+    background: blueviolet;
+    border-top:2px solid dodgerblue;
+    
+}
+.nav-item{
+    display:block;
+    width: 100%;
+    margin: 0;
+    text-align: left;
+    padding-left: 20px;
+}
+
 }
